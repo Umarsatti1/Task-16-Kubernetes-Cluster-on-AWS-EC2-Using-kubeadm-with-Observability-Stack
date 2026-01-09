@@ -1,0 +1,26 @@
+{
+  "name": "node-app",
+  "version": "1.0.0",
+  "description": "Simple nodejs application.",
+  "main": "app.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Tests passed!\""
+  },
+  "keywords": [
+    "node",
+    "aws",
+    "pm2",
+    "github",
+    "workflows",
+    "ec2"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

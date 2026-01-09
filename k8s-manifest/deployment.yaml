@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-app
+  namespace: opentelemetry
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: node-app
+  template:
+    metadata:
+      labels:
+        app: node-app
+      annotations:
+        instrumentation.opentelemetry.io/inject-nodejs: "opentelemetry/nodejs-instrumentation"
+    spec:
+      containers:
+      - name: node-app
+        image: umarsatti1/node-app:latest
+        ports:
+        - containerPort: 3000

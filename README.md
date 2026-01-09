@@ -8,7 +8,15 @@ Kubernetes components are manually configured on Ubuntu EC2 instances with Calic
 
 ---
 
-## Architecture
+## AWS Architecture Diagram
+
+<p align="center">
+  <img src="./diagram/Architecture Diagram.png" alt="Architecture Diagram" width="900">
+</p>
+
+---
+
+## K8s Architecture
 
 ### Control Plane (Master Node)
 - API Server  
